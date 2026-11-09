@@ -1,0 +1,123 @@
+devmatch/
+├── db
+│   ├── mongo-commands.js
+│   ├── mongo-init.js
+│   ├── queries.sql
+│   ├── schema.sql
+│   └── vector-commands.sql
+├── docs
+│   ├── screenshots
+│   ├── er-diagram.mmd
+│   └── project-tree.txt
+├── public
+├── scripts
+│   ├── env.ts
+│   ├── init-db.ts
+│   ├── reindex.ts
+│   ├── seed-data.json
+│   └── seed.ts
+├── src
+│   ├── app
+│   │   ├── actions
+│   │   │   ├── applications.ts
+│   │   │   ├── auth.ts
+│   │   │   ├── comments.ts
+│   │   │   ├── issues.ts
+│   │   │   ├── notifications.ts
+│   │   │   ├── profile.ts
+│   │   │   └── projects.ts
+│   │   ├── activity
+│   │   │   └── page.tsx
+│   │   ├── api
+│   │   │   ├── feed
+│   │   │   │   └── route.ts
+│   │   │   ├── health
+│   │   │   │   └── route.ts
+│   │   │   ├── issues
+│   │   │   │   ├── [id]
+│   │   │   │   │   ├── matches
+│   │   │   │   │   │   └── route.ts
+│   │   │   │   │   └── similar
+│   │   │   │   │       └── route.ts
+│   │   │   │   └── route.ts
+│   │   │   └── me
+│   │   │       └── route.ts
+│   │   ├── applications
+│   │   │   └── page.tsx
+│   │   ├── dashboard
+│   │   │   └── page.tsx
+│   │   ├── feed
+│   │   │   └── page.tsx
+│   │   ├── insights
+│   │   │   └── page.tsx
+│   │   ├── issues
+│   │   │   ├── [id]
+│   │   │   │   ├── edit
+│   │   │   │   │   └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── notifications
+│   │   │   └── page.tsx
+│   │   ├── profile
+│   │   │   └── page.tsx
+│   │   ├── projects
+│   │   │   ├── [id]
+│   │   │   │   ├── edit
+│   │   │   │   │   └── page.tsx
+│   │   │   │   ├── issues
+│   │   │   │   │   └── new
+│   │   │   │   │       └── page.tsx
+│   │   │   │   └── page.tsx
+│   │   │   └── new
+│   │   │       └── page.tsx
+│   │   ├── register
+│   │   │   └── page.tsx
+│   │   ├── error.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── forms
+│   │   │   ├── AuthForms.tsx
+│   │   │   ├── ProfileForm.tsx
+│   │   │   └── ProjectIssueForms.tsx
+│   │   ├── ConfirmForm.tsx
+│   │   ├── Flash.tsx
+│   │   ├── Header.tsx
+│   │   ├── NavLink.tsx
+│   │   ├── SkillEditor.tsx
+│   │   ├── SubmitButton.tsx
+│   │   ├── Thread.tsx
+│   │   ├── ui.tsx
+│   │   └── useActionForm.ts
+│   ├── lib
+│   │   ├── activity.ts
+│   │   ├── analytics.ts
+│   │   ├── auth.ts
+│   │   ├── db.ts
+│   │   ├── discussion.ts
+│   │   ├── embedder.ts
+│   │   ├── flash.ts
+│   │   ├── format.ts
+│   │   ├── insights.ts
+│   │   ├── mongo.ts
+│   │   ├── params.ts
+│   │   ├── queries.ts
+│   │   ├── types.ts
+│   │   └── writes.ts
+│   └── middleware.ts
+├── tests
+│   ├── db.test.ts
+│   ├── e2e.cjs
+│   └── embedder.test.ts
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+└── tsconfig.json

@@ -1,0 +1,459 @@
+{
+ "maintainers": [
+  [
+   "Asha Rao",
+   "asha@devmatch.dev",
+   "Maintainer of developer-tooling projects. Love reviewing PRs from first-time contributors."
+  ],
+  [
+   "Marcus Lee",
+   "marcus@devmatch.dev",
+   "Systems programmer and data-viz nerd. Maintain a Rust cache and a React charting library."
+  ],
+  [
+   "Priya Nair",
+   "priya@devmatch.dev",
+   "ML engineer. I maintain a small PyTorch toolkit and the docs tooling around it."
+  ],
+  [
+   "Tomas Silva",
+   "tomas@devmatch.dev",
+   "Mobile and graphics hobbyist. Flutter apps by day, C++ game engines by night."
+  ]
+ ],
+ "contributors": [
+  [
+   "Vijay Kumar",
+   "vijay@devmatch.dev",
+   "Backend developer who enjoys building REST APIs and designing relational schemas. Comfortable with query tuning and migrations.",
+   [
+    [
+     "python",
+     "advanced"
+    ],
+    [
+     "fastapi",
+     "advanced"
+    ],
+    [
+     "postgresql",
+     "intermediate"
+    ],
+    [
+     "sql",
+     "advanced"
+    ],
+    [
+     "docker",
+     "beginner"
+    ]
+   ]
+  ],
+  [
+   "Neha Kapoor",
+   "neha@devmatch.dev",
+   "Frontend engineer focused on accessible, responsive interfaces and component libraries. Care a lot about keyboard navigation and screen readers.",
+   [
+    [
+     "react",
+     "advanced"
+    ],
+    [
+     "typescript",
+     "advanced"
+    ],
+    [
+     "css",
+     "advanced"
+    ],
+    [
+     "accessibility",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Rohan Mehta",
+   "rohan@devmatch.dev",
+   "Systems programmer who likes squeezing performance out of memory-bound code. Have written allocators and a small database engine in Rust.",
+   [
+    [
+     "rust",
+     "advanced"
+    ],
+    [
+     "c",
+     "advanced"
+    ],
+    [
+     "concurrency",
+     "intermediate"
+    ],
+    [
+     "benchmarking",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Ananya Iyer",
+   "ananya@devmatch.dev",
+   "Machine learning practitioner working on NLP and transformer fine-tuning. Reproducible training pipelines and clean datasets are my thing.",
+   [
+    [
+     "pytorch",
+     "advanced"
+    ],
+    [
+     "python",
+     "advanced"
+    ],
+    [
+     "nlp",
+     "intermediate"
+    ],
+    [
+     "pandas",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Karthik S",
+   "karthik@devmatch.dev",
+   "DevOps engineer automating build and deployment pipelines. Containers, Kubernetes manifests, Terraform and GitHub Actions every day.",
+   [
+    [
+     "docker",
+     "advanced"
+    ],
+    [
+     "kubernetes",
+     "advanced"
+    ],
+    [
+     "terraform",
+     "intermediate"
+    ],
+    [
+     "github actions",
+     "advanced"
+    ],
+    [
+     "bash",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Sara Khan",
+   "sara@devmatch.dev",
+   "Mobile developer shipping cross-platform apps with Flutter and Dart. Enjoy polishing animations and offline-first UX.",
+   [
+    [
+     "flutter",
+     "advanced"
+    ],
+    [
+     "dart",
+     "advanced"
+    ],
+    [
+     "android",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Diego Alvarez",
+   "diego@devmatch.dev",
+   "Graphics programmer and game developer. OpenGL, shaders and real-time rendering; currently learning Vulkan.",
+   [
+    [
+     "c++",
+     "advanced"
+    ],
+    [
+     "opengl",
+     "advanced"
+    ],
+    [
+     "glsl",
+     "intermediate"
+    ],
+    [
+     "game development",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Meera Joshi",
+   "meera@devmatch.dev",
+   "Technical writer who loves turning confusing setups into clear tutorials. Also write small Python scripts. Happy to fix typos and improve READMEs.",
+   [
+    [
+     "technical writing",
+     "advanced"
+    ],
+    [
+     "markdown",
+     "advanced"
+    ],
+    [
+     "python",
+     "beginner"
+    ],
+    [
+     "documentation",
+     "advanced"
+    ]
+   ]
+  ],
+  [
+   "Liam O'Brien",
+   "liam@devmatch.dev",
+   "Backend engineer working in Go. Built microservices with gRPC and Redis caching; interested in observability.",
+   [
+    [
+     "go",
+     "advanced"
+    ],
+    [
+     "grpc",
+     "intermediate"
+    ],
+    [
+     "redis",
+     "intermediate"
+    ],
+    [
+     "microservices",
+     "intermediate"
+    ]
+   ]
+  ],
+  [
+   "Ishaan Verma",
+   "ishaan@devmatch.dev",
+   "Second-year student learning web development. Know HTML, CSS and some JavaScript, and building a Django side project. Looking for a first open-source issue.",
+   [
+    [
+     "html",
+     "intermediate"
+    ],
+    [
+     "css",
+     "intermediate"
+    ],
+    [
+     "javascript",
+     "beginner"
+    ],
+    [
+     "django",
+     "beginner"
+    ]
+   ]
+  ],
+  [
+   "Zoe Chen",
+   "zoe@devmatch.dev",
+   "Application security engineer. Code review for injection and XSS bugs, threat modelling, and writing secure Python services.",
+   [
+    [
+     "security",
+     "advanced"
+    ],
+    [
+     "python",
+     "intermediate"
+    ],
+    [
+     "cryptography",
+     "intermediate"
+    ],
+    [
+     "testing",
+     "intermediate"
+    ]
+   ]
+  ]
+ ],
+ "projects": [
+  [
+   "asha@devmatch.dev",
+   "PipelineKit",
+   "https://github.com/demo-org/pipelinekit",
+   "Python, Docker, GitHub Actions",
+   [
+    [
+     "Cache dependency layers in the Docker build step",
+     "Our CI image rebuilds every dependency layer on each run, which makes pipelines slow. Restructure the Dockerfile and the GitHub Actions workflow so that dependency layers are cached between builds, and document the cache invalidation rules.",
+     "medium"
+    ],
+    [
+     "Add a Kubernetes manifest generator command",
+     "Add a `pipelinekit k8s` command that renders deployment and service manifests from our YAML config. Needs knowledge of Kubernetes resource definitions and templating. Include unit tests for the rendered output.",
+     "hard"
+    ],
+    [
+     "Fix typos and outdated steps in the quickstart guide",
+     "The README quickstart references commands that were renamed two releases ago and contains several typos. Update the steps, verify them on a clean machine and improve the wording.",
+     "easy"
+    ],
+    [
+     "Colourise CLI output and add a --no-color flag",
+     "The command line tool prints plain text. Use a small library to colour success and error lines in the terminal and respect the NO_COLOR environment variable.",
+     "easy"
+    ]
+   ]
+  ],
+  [
+   "asha@devmatch.dev",
+   "QuickAPI",
+   "https://github.com/demo-org/quickapi",
+   "Python, FastAPI, PostgreSQL",
+   [
+    [
+     "Add pagination to the /items REST endpoint",
+     "The items endpoint returns every row. Implement cursor-based pagination in the FastAPI route and the underlying SQL query, keep the response schema backwards compatible and add tests.",
+     "medium"
+    ],
+    [
+     "Speed up the slow search query with a database index",
+     "Profiling shows the PostgreSQL search query does a sequential scan on a large table. Analyse the query plan, add an appropriate index through a migration and measure the improvement.",
+     "medium"
+    ],
+    [
+     "Rate-limit login attempts to prevent brute force",
+     "Add middleware that limits failed authentication attempts per IP and per account. Consider token bucket versus sliding window, and make sure password hashing and error messages do not leak information.",
+     "hard"
+    ]
+   ]
+  ],
+  [
+   "marcus@devmatch.dev",
+   "RustCache",
+   "https://github.com/demo-org/rustcache",
+   "Rust, async, benchmarks",
+   [
+    [
+     "Reduce memory fragmentation in the slab allocator",
+     "Long-running instances show growing resident memory. Investigate the custom allocator, reproduce fragmentation with a benchmark, and propose a fix that keeps allocation fast. Unsafe Rust involved.",
+     "hard"
+    ],
+    [
+     "Add criterion benchmarks for the eviction policies",
+     "We have LRU and LFU eviction but no performance numbers. Write benchmarks with criterion covering read-heavy and write-heavy workloads and publish the results in the docs.",
+     "medium"
+    ],
+    [
+     "Make the get() path lock-free for reads",
+     "Concurrent readers contend on a mutex. Explore using atomics or a sharded design so reads scale across threads without data races. Requires strong understanding of Rust concurrency.",
+     "hard"
+    ]
+   ]
+  ],
+  [
+   "marcus@devmatch.dev",
+   "BytePlot",
+   "https://github.com/demo-org/byteplot",
+   "React, TypeScript, CSS",
+   [
+    [
+     "Make the chart legend keyboard accessible",
+     "The legend toggles series with the mouse only. Add proper focus handling, ARIA roles and keyboard shortcuts so screen reader and keyboard users can show and hide series.",
+     "medium"
+    ],
+    [
+     "Add a dark theme to the React components",
+     "Introduce a dark colour scheme using CSS variables and a theme toggle component. Ensure sufficient contrast and test every chart type in both themes.",
+     "easy"
+    ],
+    [
+     "Migrate the tooltip component from JavaScript to TypeScript",
+     "The tooltip and axis helpers are still plain JavaScript. Convert them to TypeScript with strict types and fix the type errors this reveals in the React wrappers.",
+     "easy"
+    ]
+   ]
+  ],
+  [
+   "priya@devmatch.dev",
+   "NeuroLite",
+   "https://github.com/demo-org/neurolite",
+   "Python, PyTorch, CUDA",
+   [
+    [
+     "Add mixed-precision training to the trainer",
+     "Support automatic mixed precision in the PyTorch training loop to cut GPU memory and speed up training. Provide a config switch, benchmark on a transformer model and add tests.",
+     "hard"
+    ],
+    [
+     "Write a tokenizer data loader for NLP datasets",
+     "Create a dataset class that streams text files, tokenizes them with a transformer tokenizer and batches with padding. Include a small example notebook for fine-tuning.",
+     "medium"
+    ],
+    [
+     "Fix reproducibility: seed all random number generators",
+     "Two runs with the same config give different results. Seed Python, NumPy and PyTorch RNGs consistently, including dataloader workers, and add a regression test.",
+     "easy"
+    ]
+   ]
+  ],
+  [
+   "priya@devmatch.dev",
+   "DocuBridge",
+   "https://github.com/demo-org/docubridge",
+   "Markdown, Python, Sphinx",
+   [
+    [
+     "Write a getting-started tutorial for new contributors",
+     "We lack a step by step tutorial that takes a newcomer from cloning the repository to opening a first pull request. Write clear documentation with screenshots and troubleshooting tips.",
+     "easy"
+    ],
+    [
+     "Translate the API reference into Spanish",
+     "The generated API reference is English only. Translate the docstrings and landing pages to Spanish and wire up Sphinx internationalisation so translations stay in sync.",
+     "medium"
+    ]
+   ]
+  ],
+  [
+   "tomas@devmatch.dev",
+   "PocketGarden",
+   "https://github.com/demo-org/pocketgarden",
+   "Flutter, Dart, SQLite",
+   [
+    [
+     "Animate the plant card when watering is logged",
+     "In the Flutter app, add a smooth animation to the plant card when the user logs watering. Use implicit animations in Dart and keep 60fps on low-end Android devices.",
+     "easy"
+    ],
+    [
+     "Make the app work offline with local SQLite sync",
+     "Store plants and logs in a local SQLite database and sync with the server when connectivity returns. Handle conflicts and write tests for the repository layer in Dart.",
+     "hard"
+    ]
+   ]
+  ],
+  [
+   "tomas@devmatch.dev",
+   "PixelForge",
+   "https://github.com/demo-org/pixelforge",
+   "C++, OpenGL, GLSL",
+   [
+    [
+     "Implement shadow mapping in the OpenGL renderer",
+     "Add directional light shadow maps to the real-time renderer. Write the GLSL shaders, manage the depth framebuffer in C++ and expose bias and resolution settings.",
+     "hard"
+    ],
+    [
+     "Fix texture loading crash on non power-of-two images",
+     "The engine crashes when loading some PNG textures. Reproduce the bug, fix the mipmap generation in the C++ asset loader and add a regression test.",
+     "medium"
+    ]
+   ]
+  ]
+ ]
+}

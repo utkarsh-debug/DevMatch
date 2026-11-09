@@ -1,0 +1,36 @@
+# Both databases the project needs:
+#   postgres : PostgreSQL 16 + pgvector  (relational data, triggers, transactions, vector search)
+#   mongo    : MongoDB 7                 (discussion threads, activity log)
+#
+#   docker compose up -d
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: devmatch
+    ports:
+      - "5432:5432"
+    volumes:
+      - devmatch_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d devmatch"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - devmatch_mongo:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ ping: 1 }).ok"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  devmatch_pg:
+  devmatch_mongo:

@@ -1,0 +1,21 @@
+erDiagram
+  USERS ||--o{ PROJECTS : maintains
+  PROJECTS ||--o{ ISSUES : has
+  USERS ||--o{ APPLICATIONS : submits
+  ISSUES ||--o{ APPLICATIONS : receives
+  USERS ||--o{ USER_SKILLS : has
+  SKILLS ||--o{ USER_SKILLS : "rated in"
+  USERS ||--o| USER_EMBEDDINGS : "profile vector"
+  USERS ||--o{ NOTIFICATIONS : receives
+  ISSUES ||--o{ COMMENTS_MONGO : "discussed in (issueId)"
+  USERS ||--o{ ACTIVITY_LOG_MONGO : "actorId"
+  USERS { int id PK string name string email UK string role string account_status }
+  PROJECTS { int id PK int maintainer_id FK string title string tech_stack }
+  ISSUES { int id PK int project_id FK string title string difficulty string status vector384 embedding }
+  APPLICATIONS { int id PK int issue_id FK int user_id FK string status }
+  SKILLS { int id PK string name UK }
+  USER_SKILLS { int user_id FK int skill_id FK string level }
+  USER_EMBEDDINGS { int user_id PK vector384 embedding }
+  NOTIFICATIONS { int id PK int user_id FK string message bool is_read }
+  COMMENTS_MONGO { objectid _id int issueId int authorId array replies array likes }
+  ACTIVITY_LOG_MONGO { objectid _id date ts string type int actorId object meta }
