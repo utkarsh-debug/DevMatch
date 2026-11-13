@@ -1,7 +1,7 @@
 # DevMatch – Semantic Contributor-to-Issue Matching
 
 Next.js 15 + PostgreSQL/pgvector (SQL + vector DB) + MongoDB (NoSQL). Full project report: `REPORT.md` / `DevMatch_Report.docx`.
-Students: VIJAY SURIYA P (PES1UG24AM320), UTKARSH KUMAR (PES1UG24AM310).
+Students: VIJAY SURIYA .P (PES1UG24AM320), UTKARSH KUMAR (PES1UG24AM310).
 
 ## Run
 ```bash
